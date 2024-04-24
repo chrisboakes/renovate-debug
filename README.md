@@ -1,6 +1,6 @@
 # Replicate renovate bug
 
-When `overrides` has a dependency out of date, the job fails to run:
+When `pnpm overrides` has a dependency out of date, the job fails to run:
 
 ```
 DEBUG: updateDependency error (branch="renovate/undici-6.x")
