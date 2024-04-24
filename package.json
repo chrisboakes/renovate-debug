@@ -15,7 +15,7 @@
   },
   "pnpm": {
     "overrides": {
-      "undici": "6.14.1"
+      "undici": "6.14.0"
     }
   }
 }
