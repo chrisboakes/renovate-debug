@@ -36,5 +36,5 @@
 			}
 		}
 	],
-	"npmrc": "@zoopla-eng:registry=https://npm.pkg.github.com/"
+	"npmrc": "@zoopla-eng:registry=https://npm.pkg.github.com/\nlink-workspace-packages=deep\nprefer-workspace-packages=true\nshell-emulator=true\nignore-workspace-root-check=true\nworkspace-concurrency=1\nsave-exact=true\nsave-workspace-protocol=false"
 }
