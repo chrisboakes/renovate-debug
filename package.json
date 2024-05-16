@@ -13,6 +13,9 @@
   "dependencies": {
     "@vercel/node": "3.0.27",
     "typescript": "5.4.5",
+    "@zoopla-eng/bricks": "19.14.0"
+  },
+  "devDependencies": {
     "@toolkit/create-app": "0.5.0"
   },
   "pnpm": {

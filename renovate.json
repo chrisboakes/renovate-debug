@@ -26,5 +26,15 @@
 	],
 	"vulnerabilityAlerts": {
 		"labels": ["security"]
-	}
+	},
+  "hostRules": [
+		{
+			"matchHost": "https://npm.pkg.github.com/",
+			"hostType": "npm",
+			"encrypted": {
+				"token": "wcFMA/xDdHCJBTolAQ//aY8EEKfATA2z/RPoAlmLlMXAYMZPLEuAUMHtOn9oHdjdDUWK1Tj+/xRN/tIZm/oNQEFHU8mdEn88Iau0Vl3EWsNFPln2PBVuAQ9PlbdJHtLfN9ITN2oOA9wdxtMBhQ9xDxJy8ICX3hoa/ITrccOoVi/LPOEdOe8lHoOKJRVS508XGCewCudGxUCp3DW27ry8DuzTSOoMY71ahQk/1aTgWZ6cjh5C3WcxP14GmUtZY4cLIR0q1Mpevu3QgxKAK9BUKNJzAM7T2g8ImWp5r1WfIu81tPzCg28rEWqRwzoQxfRU8y3itZ7j0MAoblg9vdus97lHAKRBMDM0Loao8B0dIfTn0kmJaQXYgWeJdGz8ICWOrjkogAC6pu+8rwDlG1WZS0h9JIbrHHG7AtLGkaBJAc7XEram1EQ615dYjF31xHGh50R/92+NsF0EMAb2saZ4jz93L8a10JLDbPTDVWiGiJG+zIH874TJjahTYnZmKrP+eRuWzSsZKDmQMDsBGqCpjp1+ylslrCzEV2+wz+24xwL698wZvA+X6z/7Jvd0S9WWcCXLw6C48NEfWS2yvUFdpJTZol5Qo6NSmSI2it7U6SRmYMvDO3wWLzFAP8ivU8InH/lIQT+n9mu5S3LbZgmUwvlZyI4Up0wImOkGG+WRFDSpFbCGocDYA6qxZME8bLvSegG/ceQnd76hKMYExDhCKm0DKsBVnE8vGGHUPjBj2reqsvsXSDezfX4QwCrOBiE8E41djHph3zTcVvR7aE97tTZmxDUMQ1TQDSyad3ywgPxfiAb02xdOxsxrSr7h0WBOXQvT06xoo8S0hK5kmQ6u9D5wj2mAozSHNUBE"
+			}
+		}
+	],
+	"npmrc": "@zoopla-eng:registry=https://npm.pkg.github.com/"
 }
