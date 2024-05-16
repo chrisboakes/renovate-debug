@@ -1,0 +1,13 @@
+{
+	"name": "@config/rsbuild",
+	"version": "1.0.1",
+	"description": "",
+	"main": "./index.js",
+	"keywords": [],
+	"author": "",
+	"private": true,
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@rsbuild/core": "0.6.15"
+	}
+}
