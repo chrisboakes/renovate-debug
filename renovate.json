@@ -14,7 +14,12 @@
 		},
 		{
 			"matchPackagePrefixes": [
-				"@toolkit"
+				"@apps",
+				"@toolkit",
+				"@utils",
+				"@components",
+				"@config",
+				"zoopla-eng/terraform-ghworkflow"
 			],
 			"enabled": false
 		}
