@@ -11,9 +11,25 @@ importers:
 
   .:
     dependencies:
+      '@toolkit/create-app':
+        specifier: 0.5.0
+        version: link:private/create-app
       '@vercel/node':
         specifier: 3.0.27
         version: 3.0.27
+      typescript:
+        specifier: 5.4.5
+        version: 5.4.5
+
+  private/create-app:
+    dependencies:
+      minimist:
+        specifier: 1.2.8
+        version: 1.2.8
+    devDependencies:
+      '@types/prompts':
+        specifier: 2.4.9
+        version: 2.4.9
 
 packages:
 
@@ -91,6 +107,9 @@ packages:
 
   '@types/node@14.18.33':
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
+
+  '@types/prompts@2.4.9':
+    resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
 
   '@vercel/build-utils@7.12.0':
     resolution: {integrity: sha512-h6fO2LqEWtceK2RxoxGp7QhZZnIa4rK2x3kTJlAYc5ARZPhsn0KB7Wf+YhFCInIqaDq7S0S92YWABkHIJDKjBw==}
@@ -434,6 +453,10 @@ packages:
   json-schema-traverse@1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
 
+  kleur@3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+
   lru-cache@6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
@@ -455,6 +478,9 @@ packages:
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
+
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   minipass@3.3.6:
     resolution: {integrity: sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw==}
@@ -636,6 +662,11 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   undici@6.14.0:
     resolution: {integrity: sha512-esJ/x2QU5boTG6thdA0o4qP3cv/oPx9mcQGcp8TAHI+ZBTa0EvM9Jiyp0ILdPGLGxs5HATTKrJqAK+YhrSFicg==}
     engines: {node: '>=18.17'}
@@ -745,6 +776,11 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/node@14.18.33': {}
+
+  '@types/prompts@2.4.9':
+    dependencies:
+      '@types/node': 14.18.33
+      kleur: 3.0.3
 
   '@vercel/build-utils@7.12.0': {}
 
@@ -1072,6 +1108,8 @@ snapshots:
 
   json-schema-traverse@1.0.0: {}
 
+  kleur@3.0.3: {}
+
   lru-cache@6.0.0:
     dependencies:
       yallist: 4.0.0
@@ -1092,6 +1130,8 @@ snapshots:
   minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.11
+
+  minimist@1.2.8: {}
 
   minipass@3.3.6:
     dependencies:
@@ -1246,6 +1286,8 @@ snapshots:
   ts-toolbelt@6.15.5: {}
 
   typescript@4.9.5: {}
+
+  typescript@5.4.5: {}
 
   undici@6.14.0: {}
 

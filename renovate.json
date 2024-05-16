@@ -1,6 +1,25 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ]
+	"extends": ["config:base"],
+	"separateMajorMinor": true,
+	"timezone": "Europe/London",
+	"labels": ["dependencies"],
+	"branchTopic": "{{{depNameSanitized}}}-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}-{{{newMinor}}}{{/if}}{{/if}}-x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+	"packageRules": [
+		{
+			"matchPackagePatterns": ["*"],
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"groupName": "all non-major dependency updates",
+			"groupSlug": "all-minor-patch",
+			"automerge": false
+		},
+		{
+			"matchPackagePrefixes": [
+				"@toolkit"
+			],
+			"enabled": false
+		}
+	],
+	"vulnerabilityAlerts": {
+		"labels": ["security"]
+	}
 }
