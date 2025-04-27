@@ -1,6 +1,6 @@
 {
   "name": "renovate-debug",
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@10.10.0",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
